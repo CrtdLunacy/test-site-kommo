@@ -1,0 +1,359 @@
+@font-face {
+  font-family: "InterNormal";
+  src: url("../fonts/Inter-Regular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "InterBold";
+  src: url("../fonts/Inter-Bold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "InterLight";
+  src: url("../fonts/Inter-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "InterExtra";
+  src: url("../fonts/Inter-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 900;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: InterNormal;
+  color: #E4E5EA;
+}
+
+body {
+  background: linear-gradient(54deg, rgba(41,4,72,1) 10%, rgba(29,17,29,1) 77%, rgba(101,11,28,1) 100%);
+}
+
+a,
+button {
+  text-decoration: none;
+}
+
+button {
+  border-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  padding: 60px 0 90px 0;
+}
+
+.logoWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  margin-right: 50px;
+  max-width: 160px;
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight: 300;
+}
+
+.navigation {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-right: 130px;
+}
+
+.navigation a,
+.phone,
+.socialWrapper a,
+.company__info a,
+.menu__info a,
+.contacts__info a {
+  transition: 0.2s ease-in-out;
+}
+
+.navigation a:hover,
+.phone:hover,
+.socialWrapper a:hover,
+.company__info a:hover,
+.menu__info a:hover,
+.contacts__info a:hover {
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+}
+
+.phone {
+  margin-right: 50px;
+  white-space: nowrap;
+}
+
+.socialWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+socialWrapper__footer {
+  display: flex;
+  gap: 5px;
+}
+
+.mainWrapper {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 120px;
+}
+
+.leftInfo,
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 365px;
+}
+
+.leftInfo__title {
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.leftInfo__title span {
+  font-family: InterExtra;
+  background: linear-gradient(45deg, #FCB045 50%, #FF3F78 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.leftInfo__text {
+  max-width: 275px;
+  font-size: 18px;
+}
+
+.rightInfo {
+  text-align: right;
+}
+
+.rightInfo__title {
+  max-width: 290px;
+}
+
+.rightInfo__title span,
+.textblock__def {
+  background: linear-gradient(45deg, #FCB045 50%, #FF3F78 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.rightInfo__textblock {
+  display: flex;
+  max-width: 300px;
+  gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-grow: 0;
+  padding-bottom: 60px;
+}
+
+.rightInfo__textblock div {
+  max-width: 135px;
+}
+
+.textblock__title {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+.textblock__title-mobile {
+  display: none;
+}
+
+.textblock__text {
+  font-family: InterLight;
+}
+
+.rightInfo__btn {
+  cursor: pointer;
+  padding: 21px 35px;
+  background-color: #4077F3;
+  transition: 0.2s ease-in-out;
+}
+
+.rightInfo__btn:hover {
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__up {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.company h5,
+.menu h5,
+.contacts h5 {
+  margin-bottom: 10px;
+  color: #656566;
+}
+
+.company,
+.menu,
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.company {
+  margin-right: 100px;
+}
+
+.menu {
+  margin-right: 150px;
+}
+
+.contacts {
+  text-align: right;
+  margin-left: auto;
+}
+
+.company__info,
+.menu__info,
+.contacts__info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-height: 190px;
+}
+
+.phone__contacts {
+  white-space: nowrap;
+}
+
+.footer__down {
+  max-width: 240px;
+  display: flex;
+  align-self: flex-end;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-family: InterLight;
+  font-size: 12px;
+  text-align: right;
+  padding-bottom: 20px;
+}
+
+.footer__down a {
+  margin-top: 5px;
+  text-decoration: underline;
+  transition: 0.2s ease-in-out;
+}
+
+.contacts address {
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.contacts address:hover,
+.footer__down a:hover {
+  opacity: 0.7;
+  transition: 0.2s ease-in-out;
+}
+
+@media only screen and (max-device-width: 880px) {
+
+  body {
+    background: black;
+  }
+
+  .container {
+    max-width: 500px;
+  }
+
+  .logoWrapper,
+  .phone,
+  .socialWrapper,
+  .navigation a:nth-child(5){
+    display: none;
+  }
+
+  .navigation {
+    margin: 0;
+  }
+
+  .header {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .mainWrapper,
+  .footer__up {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main {
+    background: linear-gradient(90deg, rgba(0,24,36,0.5) 0%, rgba(121,9,118,0.5) 69%, rgba(255,0,50,0.5) 100%);
+  }
+
+  .mainWrapper {
+    padding: 40px 0 60px 0;
+  }
+
+  .leftInfo {
+    margin-bottom: 50px;
+  }
+
+  .leftInfo,
+  .rightInfo {
+    width: 100%;
+    text-align: left;
+  }
+
+  .textblock__title,
+  .textblock__text,
+  .rightInfo__btn{
+    display: none;
+  }
+
+  .textblock__title-mobile {
+    display: block;
+    min-width: 140px;
+    white-space: nowrap;
+  }
+
+  .textblock__def {
+    margin-right: 8px;
+  }
+
+  .footer__up {
+    gap: 20px;
+    align-items: flex-start;
+  }
+
+  .company,
+  .menu,
+  .contacts {
+    margin: 0;
+    text-align: left;
+  }
+
+  .footer__down {
+    justify-content: flex-start;
+    text-align: left;
+    align-self: flex-start;
+  }
+}
